@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор стоимости заказа</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Калькулятор стоимости заказа</h1>
+
+  <form id="order-form" novalidate>
+    <p>
+      <label for="product">Товар:</label>
+      <select id="product" name="product">
+        <option value="100">Товар A — 100 ₽</option>
+        <option value="250">Товар B — 250 ₽</option>
+        <option value="470">Товар C — 470 ₽</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="quantity">Количество:</label>
+      <input type="text" id="quantity" name="quantity" placeholder="Введите целое число">
+    </p>
+
+    <p>
+      <button type="submit" id="calc-button">Подсчитать стоимость</button>
+    </p>
+  </form>
+
+  <div id="error" class="error" role="alert"></div>
+  <div id="result" class="result"></div>
+</body>
+</html>
